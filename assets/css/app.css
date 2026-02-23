@@ -719,7 +719,6 @@ img {
         min-height: 100vh;
         flex-direction: column;
         text-align: center;
-        padding: 0 1rem;
     }
 
     .hero-title {
@@ -757,6 +756,9 @@ img {
 }
 
 @media screen and (max-width: 600px) {
+    .hero-text .hero-title {
+        font-size: 2rem;
+    }
     .hero-buttons {
         flex-direction: column;
         display: flex;
@@ -765,4 +767,13 @@ img {
         width: 100%;
         text-align: center;
     }
+    .form-group .submit-button {
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 1rem; /* equals ~16px because root is responsive */
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        touch-action: manipulation;
+  }
 }
